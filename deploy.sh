@@ -1,5 +1,4 @@
 #!/bin/sh
-# Simple local deployment: copy the application to a target directory.
 set -e
 
 DEPLOY_DIR="${DEPLOY_DIR:-$HOME/deployed_app}"
