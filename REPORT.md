@@ -17,4 +17,11 @@ Setup -> Lint -> Test -> Coverage -> Security Scan -> Deploy
 
 ## Pipeline output
 
-<!-- Paste the Jenkins console output / screenshot of the successful build here -->
+Build #3 of the `Python-CI-CD` job finished with **SUCCESS** (full log: `screenshots/console_output.txt`).
+
+- Lint (flake8): no warnings. Test (pytest): 1 passed.
+- Coverage: `app.py` 4 statements, 1 missed, 75% (the missed line is the `__main__` print).
+- Security Scan (bandit): No issues identified (0 low/medium/high).
+- Deploy: `deploy.sh` copied `app.py` to `~/deployed_app` and printed `Hello, World from Leen Abdallah!`, then `Deployment successful.`
+
+Screenshots (in `screenshots/`): `01_job_status.png`, `02_pipeline_steps.png`, `04_test_coverage.png`, `05_coverage_report.png`, `06_security_scan.png`, `07_deploy_success.png`.
